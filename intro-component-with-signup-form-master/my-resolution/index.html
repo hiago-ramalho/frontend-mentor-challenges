@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-page</title>
+
+    <link rel="stylesheet" href="../my-resolution/style.css">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+        <section id="text-content">
+            <h1>
+                Learn to code by <br>
+                watching others
+            </h1>
+
+            <p>
+                See how experienced developers solve problems in real-time. <br>
+                Watching scripted tutorials is great, but understanding how <br>
+                developers think is invaluable.
+            </p>
+
+        </section>
+
+        <section id="form-section">
+            <button id="purple-color"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+
+            <form action="" method="POST" id="contact-form">
+                
+                <label class="sr-only" for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" >
+
+                <label class="sr-only" for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" >
+
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email Adress" >
+
+                <label class="sr-only" for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" >
+
+                <button class="button-claim" type="submit" form="contact-form">CLAIM YOUR FREE TRIAL</button>
+
+                <p>By clicking the button, you are agreeing to our <span id="text-red">Terms and Services</span></p>
+
+            </form>
+
+        </section>
+    </main>
+
+    <div class="modal-error">
+        <div class="modal">
+            <div class="modal-content">
+                <p>
+                    <strong>Attention
+                         
+                        <img src="../images/icon-error.svg" alt="" srcset="">
+                    </strong> 
+                    <br><br>
+                    All fields must be filled.
+                </p>
+
+                <button id="ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../my-resolution/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*--- HEADER ----*/
+
+header {
+    background: linear-gradient(to right, #FF8F70, #FF3D54);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#img-bg-header {
+    width: 60%;
+    position: absolute;
+    left: -30%;
+}
+
+.nav-bar, .intro-content {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header .nav-bar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 3rem;
+}
+
+.nav-bar img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.nav-bar .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links .navegation-links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.links .navegation-links .drop-down {
+    list-style: none;
+    margin-left: 2.5rem;
+}
+
+.links .navegation-links .drop-down .arrow-image {
+    content: url(../images/icon-arrow-light.svg);
+    margin-left: 0.5rem;
+}
+
+.links .login-links {
+    margin-right: 3rem;
+}
+
+.login-links #sign-up {
+    background: #fff;
+    color: #FF3D54;
+    border-radius: 2rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.login-links #sign-up:hover {
+    background: #FF8F7066;
+    color: #fff;
+
+    transition: 300ms;
+}
+
+.intro-content {
+    width: 100%;
+    margin-top: 8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.intro-content .buttons-intro button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+
+    background: #fff;
+    color: #FF8F70;
+    font-weight: 700;
+
+    margin-top: 1rem;
+}
+
+.intro-content .buttons-intro button:hover {
+    text-decoration: underline;
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.intro-content .buttons-intro #learn-more {
+    background: #FF3D5422;
+    color: #fff;
+    border: solid 2px #fff;
+    margin-left: 1rem;
+}
+
+.intro-content .buttons-intro button:hover {
+    text-decoration: underline;
+    transition: 300ms;
+    cursor: pointer;
+
+    background: #FF3D5422;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.intro-content .buttons-intro #learn-more:hover {
+    background: #FF3D5422;
+    color: #fff;
+    border: solid 2px #fff;
+    margin-left: 1rem;
+    background: #fff;
+    color: #FF8F70;
+}
+
+/*--- MAIN ----*/
+
+main {
+    position: relative;
+
+    max-width: 100%;
+}
+
+main .first-section {
+    max-width: 100%;
+    position: relative;
+    color: #3F4164;
+}
+
+.title-section {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.first-section h2:last-of-type {
+    margin-top: 3rem;
+}
+
+.first-section .content .text-content {
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+
+.first-section .content .text-content p {
+    color: #909090;
+    margin-top: 2rem;
+    word-spacing: 0.2rem;
+    line-height: 1.2rem;
+}
+
+.first-section .content .illustration-image img {
+    width: 40%;
+    position: absolute;
+    right: -10%;
+    top: -20%;
+}
+
+.second-section {
+    margin-top: 8rem;
+    border-radius: 0 6rem 0 4rem;
+
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background:url(../images/bg-pattern-circles.svg), linear-gradient(to right, #2C2D3F, #3F4164);
+    background-repeat: no-repeat;
+    background-position: -25% 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.second-section .image-content img {
+    position: absolute;
+    top: -15%;
+    left: 10%;
+
+}
+
+.second-section .text-content {
+    margin-right: 7rem;
+    color: #fff;
+}
+
+.second-section .text-content h1  {
+    font-size: 2.5rem;
+}
+
+.second-section .text-content p {
+    color: #f0f0f099;
+    line-height: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.third-section {
+    width: 100%;
+    margin-top: 10rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.third-section .image-content {
+    width: 100%;
+    margin-left: -15%;
+}
+
+.third-section .text-content {
+    width: 100%;
+    margin-left: 10%;
+}
+
+.third-section .text-content h2 {
+    color: #3F4164;
+}
+
+.third-section .text-content p {
+    color: #909090;
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+}
+
+/*--- FOOTER ----*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 4rem;
+    border-radius: 0 8rem 0 0;
+    background-color: #25252D;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+}
+
+footer .image-footer {
+    margin-top: -6rem;
+    margin-left: 6rem;
+}
+
+footer .image-footer img {
+    cursor: pointer;
+}
+
+footer .links-footer {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 600;
+}
+
+footer .links-footer ul {
+    list-style: none;
+    font-size: 0.9rem;
+
+    margin-top: 2rem;
+}
+
+footer .links-footer ul:hover {
+    cursor: pointer;
+}
+
+footer .links-footer ul li:first-child {
+    margin-top: 1.5rem;
+}
+
+footer .links-footer ul li {
+    color: #f0f0f066;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    margin-top: 0.6rem;
+}
+
+footer .links-footer ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

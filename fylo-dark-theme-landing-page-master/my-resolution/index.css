@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+}
+
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #181F2A;
+
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header .logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+header .nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+    margin-right: 2rem;
+}
+
+header .nav-bar a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+.first-section {
+    max-width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.first-section .image-content img {
+    width: 600px;
+}
+
+.first-section .text-content {
+    margin-top: 2rem;
+}
+
+.first-section .text-content h2 {
+    font-size: 2rem;
+}
+
+.first-section .text-content p {
+    margin-top: 1rem;
+}
+
+.first-section .text-content button {
+    margin-top: 1rem;
+    padding: .6rem 4rem;
+    background: linear-gradient(to right, #65E2D9, #339ECC);
+    border-radius: 1rem;
+
+    font-weight: 700;
+    color: #fff;
+}
+
+.first-section .text-content button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+.second-section {
+    max-width: 70%;
+    margin: 6rem auto 2rem auto;
+
+    text-align: center;
+}
+
+.second-section .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards .card {
+    padding: 3rem;
+}
+
+.cards .card h3 {
+    margin-top: 1rem;
+}
+
+.cards .card p {
+    margin-top: 1rem;
+}
+
+.third-section {
+    max-width: 80%;
+    margin: 4rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.third-section .text-content {
+    text-align: left;
+
+    margin-left: 5rem;
+}
+
+.third-section .text-content h2 {
+    font-size: 2rem;
+}
+
+.third-section .text-content p {
+    margin-top: 2rem;
+}
+
+.third-section .text-content p.link {
+    display: inline-block;
+    color: #65E2D9;
+    border-bottom: 1px solid #65E2D9;
+
+    cursor: pointer;
+}
+
+.third-section .text-content p.link span {
+    content: url(../images/icon-arrow.svg);
+}
+
+.coments-section {
+    max-width: 80%;
+    margin: 10rem auto 2rem auto;
+    position: relative;
+}
+
+.coments-section #quotes-img {
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+
+    z-index: -1;
+}
+
+.coments-section .coments-cards {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    z-index: 999;
+}
+
+.coments-section .coments-cards .coment-card {
+    background-color: #202A3C;
+
+    padding: 2rem;
+}
+
+.coments-section .coments-cards .coment-card p.coment {
+    color: #ffffffbb;
+
+    word-spacing: 4px;
+}
+
+.card-person-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-person-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card-person-info .info-text {
+    margin-left: 1rem;
+}
+
+.card-person-info .info-text p {
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.card-person-info .info-text span {
+    font-size: .7rem;
+    color: #ffffff99;
+}
+
+.registration-section {
+    max-width: 60%;
+
+    margin: 8rem auto -4rem auto;
+    padding: 3rem;
+
+    text-align: center;
+
+    background-color: #1C2431;
+
+    z-index: 1;
+}
+
+.registration-section .text-content h2 {
+    font-size: 2rem;
+}
+
+.registration-section .text-content p {
+    margin-top: 1.5rem;
+    color: #ffffffbb;
+    font-size: .9rem;
+}
+
+.registration-section .area-send-email {
+    margin-top: 1.5rem;
+}
+
+.registration-section .area-send-email input {
+    padding: .6rem 1rem;
+    border-radius: 1rem;
+
+    width: 350px;
+}
+
+.registration-section .area-send-email input:focus {
+    border: 2px solid #339ECC;
+    outline: none;
+}
+
+.registration-section .area-send-email button {
+    padding: .6rem 2rem;
+    border-radius: 1rem;
+    margin-left: 2rem;
+
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(to right, #65E2D9, #339ECC);
+}
+
+.registration-section .area-send-email button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+
+    width: 100%;
+    padding: 6rem 4rem 4rem 4rem;
+
+    background-color: #0B1523;
+
+    z-index: -1;
+}
+
+footer #content-footer {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #content-footer ul {
+    list-style: none;
+    color: #ffffffbb;
+    font-size: .8rem;
+}
+
+footer #content-footer ul li {
+    padding-top: .7rem;
+}
+
+footer #content-footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer #content-footer #contacts #phone span {
+    content: url(../images/icon-phone.svg);
+    margin-right: 1rem;
+}
+
+footer #content-footer #contacts #email {
+    margin-top: 1rem;
+}
+
+footer #content-footer #contacts #email span {
+    content: url(../images/icon-email.svg);
+    margin-right: 1rem;
+}
+
+footer #content-footer #address-logo img {
+    width: 120px;
+}
+
+footer #content-footer #address-logo .address-content {
+    margin-top: 1rem;
+    display: flex;
+}
+footer #content-footer #address-logo .address-content img {
+    width: 15px;
+    height: 15px;
+    margin-right: .7rem;
+}
+
+footer #content-footer #social-medias .facebook {
+    content: url(../images/logo-facebook.svg);
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+footer #content-footer #social-medias .twitter {
+    content: url(../images/logo-twitter.svg);
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+footer #content-footer #social-medias .instagram {
+    content: url(../images/logo-instagram.svg);
+    background-color: #fff;
+    border-radius: 50%;
+}

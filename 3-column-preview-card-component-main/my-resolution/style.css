@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --title-font: 'Big Shoulders Display', cursive;
+    --secundary-font: 'Lexend Deca', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--secundary-font);
+}
+
+body {
+    padding: 2rem;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: var(--title-font);
+    margin-top: 2rem;
+}
+
+p {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+    color: #F0F0F0bf;
+}
+
+button {
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 12rem;
+
+    margin-top: 2rem;
+    background-color: #f2f2f2;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    color: #fff;
+
+    padding: 4rem;
+}
+
+.card.sedans {
+    background-color: #E38826;
+
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.card.sedans button {
+    color: #E38826;
+}
+
+.card.suvs {
+    background-color: #006970;
+}
+
+.card.suvs button {
+    color: #006970;
+}
+
+.card.luxury {
+    background-color: #004241;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.card.luxury button {
+    color: #004241;
+}
+
+@media (min-width:770px) {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card.sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card.luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    button {
+        margin-top: 6rem;
+        font-weight: 700;
+    }
+}
